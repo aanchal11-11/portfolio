@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aanchal — 3D Artist, Animator & Creative Designer</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Portfolio of Aanchal — 3D Artist, Character Modeler, Rigging Artist, and Creative Designer. Explore 3D animations, stylized dioramas, and visual storytelling.">
+  <meta name="keywords" content="3D Artist, Animator, Character Rigging, Autodesk Maya, Blender, Substance Painter, Portfolio, Aanchal">
+  <meta property="og:title" content="Aanchal — 3D Artist & Creative Designer">
+  <meta property="og:description" content="Explore handcrafted 3D animations, character rigs, and visual storytelling.">
+  <meta property="og:image" content="assets/img/hero-workstation.jpg">
+  
+  <!-- Fonts: Retro pixel, warm handwriting, clean editorial serif, and modern sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=VT323&family=Space+Mono:wght@400;700&family=Patrick+Hand&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-day">
+  <!-- Desk Grain & Lighting Overlay -->
+  <div class="desk-ambiance-glow" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- FLOATING VINTAGE DESK NAV / RULER BAR -->
+  <header class="desk-header">
+    <div class="desk-header-inner">
+      <a href="#hero" class="brand-tag">
+        <span class="tag-pin">📌</span>
+        <span class="brand-text">aanchal.art</span>
+        <span class="brand-year">'26</span>
+      </a>
+
+      <nav class="desk-nav">
+        <a href="#hero" class="nav-link active" data-nav="hero"><span>01</span> Station</a>
+        <a href="#about" class="nav-link" data-nav="about"><span>02</span> About Me</a>
+        <a href="#skills" class="nav-link" data-nav="skills"><span>03</span> Toolbox</a>
+        <a href="#projects" class="nav-link" data-nav="projects"><span>04</span> Works</a>
+        <a href="#connect" class="nav-link" data-nav="connect"><span>05</span> Connect</a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Sound Effect Toggle -->
+        <button id="soundToggle" class="desk-btn" title="Toggle Tactile Mechanical Sounds" aria-label="Toggle Sound">
+          <span class="btn-icon sound-icon">🔊</span>
+          <span class="btn-label">SFX: <span id="soundStatus">ON</span></span>
+        </button>
+
+        <!-- Lamp Theme Toggle -->
+        <button id="lampToggle" class="desk-btn lamp-btn" title="Toggle Desk Lamp (Day / Night Mode)" aria-label="Toggle Night Lamp">
+          <span class="btn-icon lamp-icon">💡</span>
+          <span class="btn-label">Lamp: <span id="lampStatus">DAY</span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION: THE 3D RETRO WORKSTATION ==================== -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        
+        <!-- Retro Desk Environment Card -->
+        <div class="workstation-wrapper">
+          
+          <!-- Sticky note attached to computer top-left -->
+          <div class="sticky-note sticky-hero-contact tape-top-center">
+            <div class="sticky-pin"></div>
+            <p class="handwriting-sub">in / aanchal11-11</p>
+            <p class="handwriting-main">email me at</p>
+            <a href="mailto:aanchalgrng@gmail.com" class="handwriting-link">aanchalgrng@gmail.com</a>
+          </div>
+
+          <!-- Sticky note on desk right -->
+          <div class="sticky-note sticky-hero-role tape-angle">
+            <span class="role-badge">2026 EDITION</span>
+            <p class="handwriting-lead">3D Artist &amp; Creative Designer</p>
+            <p class="handwriting-sub">Animation • Rigging • Visual Storytelling</p>
+          </div>
+
+          <!-- Retro CRT Computer Monitor -->
+          <div class="crt-monitor">
+            <div class="crt-bezel">
+              <!-- Monitor Top Ventilation & Controls -->
+              <div class="crt-header-bar">
+                <div class="crt-brand-badge">AANCHAL-VISION 2026</div>
+                <div class="crt-status-indicator">
+                  <span class="status-dot"></span>
+                  <span class="status-text">ONLINE</span>
+                </div>
+              </div>
+
+              <!-- Monitor Screen Glass -->
+              <div class="crt-screen">
+                <div class="crt-scanlines"></div>
+                <div class="crt-screen-content">
+                  <div class="screen-top-meta">
+                    <span class="meta-item">ARCHIVE_SYS_V4.2</span>
+                    <span class="meta-item time-display" id="systemClock">23:59:00</span>
+                  </div>
+
+                  <div class="crt-title-block">
+                    <h1 class="crt-title">
+                      <span>Port</span><span class="pixel-f">f</span><span>oli</span><span class="pixel-cursor">█</span>
+                    </h1>
+                    <p class="crt-subtitle">3D Character Animation • Stylized Assets • Visual Direction</p>
+                  </div>
+
+                  <div class="crt-terminal-body">
+                    <div class="terminal-line"><span class="prompt-arrow">&gt;</span> <span class="term-dim">USER:</span> Aanchal Gurung</div>
+                    <div class="terminal-line"><span class="prompt-arrow">&gt;</span> <span class="term-dim">SPECIALIZATION:</span> 3D Modeling, Rigging, Storyboarding &amp; Direction</div>
+                    <div class="terminal-line"><span class="prompt-arrow">&gt;</span> <span class="term-dim">CURRENT STATUS:</span> <span class="term-highlight">OPEN FOR COMMISSIONS &amp; ROLES</span></div>
+                    <div class="terminal-line interactive-prompt"><span class="prompt-arrow">&gt;</span> <span id="interactiveOutput">Click mechanical keys below to explore...</span></div>
+                  </div>
+
+                  <div class="crt-actions">
+                    <a href="#projects" class="crt-btn primary-crt-btn">
+                      <span>[ VIEW SELECTED PROJECTS ]</span>
+                    </a>
+                    <a href="#about" class="crt-btn secondary-crt-btn">
+                      <span>[ EXPLORE DESK DOSSIER ]</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Monitor Lower Knobs & Sliders -->
+              <div class="crt-lower-control-strip">
+                <div class="switch-slot">
+                  <button class="bezel-knob" id="crtColorMode" title="Switch CRT Phosphor Color">
+                    <span class="knob-marker"></span>
+                  </button>
+                  <span class="bezel-label">PHOSPHOR</span>
+                </div>
+                <div class="bezel-dots">
+                  <span class="dot dot-cream"></span>
+                  <span class="dot dot-salmon"></span>
+                  <span class="dot dot-peach"></span>
+                </div>
+                <div class="bezel-speaker-grille">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHUNKY RETRO MECHANICAL KEYBOARD -->
+            <div class="retro-keyboard">
+              <div class="keyboard-casing">
+                <div class="keyboard-row">
+                  <button class="key key-esc" data-key="esc" title="Press Esc"><span class="key-top">esc</span></button>
+                  <button class="key key-num key-salmon" data-key="2" title="Key 2"><span class="key-top">2</span></button>
+                  <button class="key key-num key-green" data-key="0" title="Key 0"><span class="key-top">0</span></button>
+                  <button class="key key-cat" data-key="cat" title="Cat Key!"><span class="key-top">🐱</span></button>
+                  <button class="key key-wide key-terracotta" data-key="ten" title="Key ten."><span class="key-top">ten.</span></button>
+                </div>
+                <div class="keyboard-row">
+                  <button class="key key-smile key-sage" data-key="smile" title="Smile!"><span class="key-top">😊</span></button>
+                  <button class="key key-num key-charcoal" data-key="2" title="Key 2"><span class="key-top">2</span></button>
+                  <button class="key key-num key-pink" data-key="6" title="Key 6"><span class="key-top">6</span></button>
+                  <button class="key key-ctrl" data-key="ctrl" title="Key ctrl"><span class="key-top">ctrl</span></button>
+                  <button class="key key-arrow" data-key="up" title="Scroll Up"><span class="key-top">↑</span></button>
+                </div>
+              </div>
+              <div class="keyboard-sticker">
+                <span class="sticker-num">48645218</span>
+                <span class="sticker-text">good things are coming ✨</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Desk Accents -->
+          <div class="desk-prop coffee-cup" title="Member Always Sleepy Club">
+            <div class="coffee-lid"></div>
+            <div class="coffee-sleeve">
+              <span class="sleeve-badge">MEMBER</span>
+              <span class="sleeve-text">ALWAYS SLEEPY CLUB ☕</span>
+            </div>
+            <div class="coffee-cup-body"></div>
+          </div>
+
+          <div class="desk-prop radio-box" title="Vintage Desk Radio">
+            <div class="radio-handle"></div>
+            <div class="radio-grille"></div>
+            <div class="radio-tuner">
+              <div class="tuner-dial"></div>
+              <span class="freq-tag">98.4 FM LOFI</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION: THE SCRAPBOOK DESK ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <!-- Section Stamp -->
+        <div class="section-stamp-wrapper">
+          <div class="vintage-stamp">
+            <span class="stamp-cat">DOSSIER</span>
+            <span class="stamp-num">SEC.02</span>
+            <h2 class="stamp-heading">About Me &amp; Creative Journey</h2>
+          </div>
+        </div>
+
+        <!-- The Big Scrapbook Clipboard -->
+        <div class="scrapbook-desk-board">
+          
+          <!-- Silver Clipboard Clip at the top -->
+          <div class="clipboard-top-clip">
+            <div class="clip-metal-loop"></div>
+            <div class="clip-bracket"></div>
+          </div>
+
+          <div class="scrapbook-grid">
+            
+            <!-- LEFT COLUMN: Polaroid + Belongs Tag + Receiptify + Connect Pass -->
+            <div class="scrapbook-left-col">
+              
+              <!-- Polaroid Frame -->
+              <div class="polaroid-card tape-top-right">
+                <div class="tape-strip tape-clear"></div>
+                <div class="polaroid-photo-frame">
+                  <img src="assets/img/about-desk.jpg" alt="Aanchal on Desk Collage" class="polaroid-img" id="polaroidImg">
+                  <div class="polaroid-glare"></div>
+                </div>
+                <div class="polaroid-caption">
+                  <p class="polaroid-title">Aanchal • Creative Explorer</p>
+                  <p class="polaroid-date">Kuala Lumpur / Worldwide • 2026</p>
+                </div>
+              </div>
+
+              <!-- "This file belongs to" Dymo / Washi Label -->
+              <div class="washi-tape-label">
+                <span class="washi-bracket">[</span>
+                <span class="washi-text">this file belongs to</span>
+                <strong class="washi-name">aanchal</strong>
+                <span class="washi-bracket">]</span>
+              </div>
+
+              <!-- RECEIPTIFY CARD: TOP TRACKS & VIBES -->
+              <div class="receiptify-card">
+                <div class="receipt-torn-top"></div>
+                <div class="receipt-header">
+                  <h3 class="receipt-title">RECEIPTIFY</h3>
+                  <p class="receipt-sub">CREATIVE FOCUS PLAYLIST</p>
+                  <p class="receipt-date">FOR: 2026 RESUME REVIEW</p>
+                </div>
+                <div class="receipt-divider">==============================</div>
+                <div class="receipt-rows">
+                  <div class="receipt-row">
+                    <span class="rec-qty">01</span>
+                    <span class="rec-name">SABRINA CARPENTER - ESPRESSO</span>
+                    <span class="rec-time">2:55</span>
+                  </div>
+                  <div class="receipt-row">
+                    <span class="rec-qty">02</span>
+                    <span class="rec-name">SZA - SNOOZE</span>
+                    <span class="rec-time">3:21</span>
+                  </div>
+                  <div class="receipt-row">
+                    <span class="rec-qty">03</span>
+                    <span class="rec-name">NEWJEANS - DITTO (LOFI REMIX)</span>
+                    <span class="rec-time">3:05</span>
+                  </div>
+                  <div class="receipt-row">
+                    <span class="rec-qty">04</span>
+                    <span class="rec-name">JOE HISAISHI - ONE SUMMER'S DAY</span>
+                    <span class="rec-time">3:56</span>
+                  </div>
+                  <div class="receipt-row">
+                    <span class="rec-qty">05</span>
+                    <span class="rec-name">CHILLHOP RADIO - BEATS TO RIG TO</span>
+                    <span class="rec-time">4:20</span>
+                  </div>
+                </div>
+                <div class="receipt-divider">------------------------------</div>
+                <div class="receipt-total">
+                  <span>TOTAL FOCUS HOURS:</span>
+                  <span>1,840+ HRS</span>
+                </div>
+                <div class="receipt-barcode">
+                  <div class="barcode-lines"></div>
+                  <span class="barcode-num">AANCHAL-PORTFOLIO-2026</span>
+                </div>
+                <div class="receipt-torn-bottom"></div>
+              </div>
+
+              <!-- LET'S CONNECT BOARDING PASS TICKET -->
+              <div class="ticket-stub" id="connect">
+                <div class="ticket-paperclip"></div>
+                <div class="ticket-header">
+                  <span class="ticket-red-stamp">LET'S CONNECT</span>
+                  <span class="ticket-gate">GATE 26</span>
+                </div>
+                <div class="ticket-body">
+                  <div class="ticket-info">
+                    <div class="ticket-item">
+                      <span class="item-label">EMAIL:</span>
+                      <a href="mailto:aanchalgrng@gmail.com" class="item-value link-action">aanchalgrng@gmail.com</a>
+                    </div>
+                    <div class="ticket-item">
+                      <span class="item-label">LINKEDIN:</span>
+                      <a href="https://linkedin.com" target="_blank" rel="noopener" class="item-value">in/aanchal11-11</a>
+                    </div>
+                    <div class="ticket-item">
+                      <span class="item-label">GITHUB:</span>
+                      <a href="https://github.com/aanchal11-11" target="_blank" rel="noopener" class="item-value">github.com/aanchal11-11</a>
+                    </div>
+                    <div class="ticket-item">
+                      <span class="item-label">BEHANCE:</span>
+                      <span class="item-value">behance.net/aanchal-art</span>
+                    </div>
+                  </div>
+                  <div class="ticket-qr-block">
+                    <!-- Crisp SVG QR Code Representation -->
+                    <div class="qr-box" title="Scan to Connect">
+                      <svg viewBox="0 0 100 100" class="qr-svg">
+                        <rect width="100" height="100" fill="#fff" />
+                        <!-- QR markers -->
+                        <rect x="10" y="10" width="25" height="25" fill="#111" />
+                        <rect x="15" y="15" width="15" height="15" fill="#fff" />
+                        <rect x="18" y="18" width="9" height="9" fill="#111" />
+                        
+                        <rect x="65" y="10" width="25" height="25" fill="#111" />
+                        <rect x="70" y="15" width="15" height="15" fill="#fff" />
+                        <rect x="73" y="18" width="9" height="9" fill="#111" />
+
+                        <rect x="10" y="65" width="25" height="25" fill="#111" />
+                        <rect x="15" y="70" width="15" height="15" fill="#fff" />
+                        <rect x="18" y="73" width="9" height="9" fill="#111" />
+                        
+                        <!-- Data dots -->
+                        <rect x="42" y="15" width="6" height="6" fill="#111" />
+                        <rect x="52" y="22" width="6" height="6" fill="#111" />
+                        <rect x="42" y="30" width="6" height="6" fill="#111" />
+                        <rect x="50" y="45" width="8" height="8" fill="#111" />
+                        <rect x="25" y="48" width="6" height="6" fill="#111" />
+                        <rect x="68" y="48" width="8" height="6" fill="#111" />
+                        <rect x="45" y="68" width="6" height="8" fill="#111" />
+                        <rect x="60" y="68" width="8" height="8" fill="#111" />
+                        <rect x="75" y="75" width="8" height="8" fill="#111" />
+                      </svg>
+                      <span class="qr-caption">SCAN ME</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ticket-action-bar">
+                  <button class="copy-email-btn" id="copyEmailBtn">
+                    <span>📋 Copy Email Address</span>
+                  </button>
+                  <span class="copied-toast" id="copiedToast">Copied to clipboard! ✨</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Lined Intro + Sticky Notes + Blue Education Card -->
+            <div class="scrapbook-right-col">
+              
+              <!-- LINED NOTEBOOK SHEET: HEJ! -->
+              <div class="lined-note-paper tape-top-left">
+                <div class="tape-strip tape-washi"></div>
+                <div class="lined-paper-header">
+                  <h3 class="paper-title-hej">hej!</h3>
+                  <span class="paper-meta">Creative Dossier // Vol. 2026</span>
+                </div>
+                <div class="lined-paper-body">
+                  <p class="highlight-text">
+                    I am an <strong>Animation graduate &amp; Creative Designer</strong> with a lifelong passion for 
+                    <strong>3D modelling, character animation, visual storytelling, and interactive experiences</strong>.
+                  </p>
+                  <p>
+                    I enjoy creating visually engaging work while continuously exploring new techniques, stylized art styles, 
+                    and cinematic approaches. Whether it is breathing life into 3D characters, sculpting cozy environments, 
+                    or crafting dynamic storyboards, I strive to turn ideas into memorable and heartfelt experiences.
+                  </p>
+                  <p>
+                    I'm a curious, collaborative, and adaptable creative who thrives at the intersection of 
+                    <strong>artistic intuition</strong> and <strong>technical craft</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <!-- TWO STICKY NOTES IN TANDEM -->
+              <div class="sticky-notes-cluster">
+                
+                <!-- Yellow Sticky Note: Experience -->
+                <div class="sticky-note sticky-experience">
+                  <div class="sticky-tape"></div>
+                  <h4 class="sticky-heading">Experience.</h4>
+                  
+                  <div class="exp-item">
+                    <div class="star-badge">★ 2024–2026</div>
+                    <div class="exp-details">
+                      <strong>Freelance 3D &amp; Visual Artist</strong>
+                      <span class="exp-sub">2D &amp; 3D Character Design, Rigging &amp; Art Commissions</span>
+                    </div>
+                  </div>
+
+                  <div class="exp-item">
+                    <div class="star-badge">★ 2025</div>
+                    <div class="exp-details">
+                      <strong>2D/3D Junior Designer</strong>
+                      <span class="exp-sub">Creative Agency • Motion Graphics &amp; Social Assets</span>
+                    </div>
+                  </div>
+
+                  <div class="exp-item">
+                    <div class="star-badge">★ 2024</div>
+                    <div class="exp-details">
+                      <strong>3D Animation &amp; Rigging Intern</strong>
+                      <span class="exp-sub">ASTATICA Studios • Maya Rigging, Blendshapes &amp; Props</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Green Sticky Note: What Drives Me -->
+                <div class="sticky-note sticky-philosophy">
+                  <div class="sticky-tape"></div>
+                  <h4 class="sticky-heading">My Philosophy.</h4>
+                  <p class="handwriting-body">
+                    "Every 3D frame should carry soul. From the subtle blink of an eye to the warm bounce of light on a coffee mug, detail makes people feel at home."
+                  </p>
+                  <div class="philosophy-tags">
+                    <span class="tag">#CharacterRigging</span>
+                    <span class="tag">#GhibliAesthetics</span>
+                    <span class="tag">#3DStorytelling</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- SKY-BLUE INDEX CARD: EDUCATION -->
+              <div class="education-card">
+                <div class="card-binder-ring ring-1"></div>
+                <div class="card-binder-ring ring-2"></div>
+                <div class="card-binder-ring ring-3"></div>
+                <div class="card-paperclip"></div>
+
+                <div class="edu-header">
+                  <span class="pink-tab">Education .</span>
+                  <span class="edu-badge">ACADEMIC BACKGROUND</span>
+                </div>
+
+                <div class="edu-body">
+                  <div class="edu-row">
+                    <div class="edu-years">2022 - 2026</div>
+                    <div class="edu-content">
+                      <h4 class="edu-school">Multimedia University, Cyberjaya</h4>
+                      <p class="edu-degree">Bachelor of Multimedia (Hons.) in Animation</p>
+                      <span class="edu-grade">CGPA 3.87 • High Distinction</span>
+                    </div>
+                  </div>
+
+                  <div class="edu-row">
+                    <div class="edu-years">2021 - 2022</div>
+                    <div class="edu-content">
+                      <h4 class="edu-school">Multimedia University, Cyberjaya</h4>
+                      <p class="edu-degree">Foundation in Creative Multimedia</p>
+                      <span class="edu-grade">CGPA 3.84 • Dean's Honors List</span>
+                    </div>
+                  </div>
+
+                  <div class="edu-row">
+                    <div class="edu-years">2016 - 2020</div>
+                    <div class="edu-content">
+                      <h4 class="edu-school">SMK Agama Kuala Lumpur</h4>
+                      <p class="edu-degree">Sijil Pelajaran Malaysia (SPM)</p>
+                      <span class="edu-grade">8A 2B • Visual Arts Excellence</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION: TOOLBOX & APPS ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-stamp-wrapper">
+          <div class="vintage-stamp">
+            <span class="stamp-cat">CAPABILITIES</span>
+            <span class="stamp-num">SEC.03</span>
+            <h2 class="stamp-heading">Software, Skills &amp; Craftsmanship</h2>
+          </div>
+        </div>
+
+        <!-- The Creative Pegboard / Desk Organizer -->
+        <div class="pegboard-container">
+          
+          <!-- Category 1: 3D & Animation -->
+          <div class="skill-category-card">
+            <div class="card-header-label">
+              <span class="badge-num">01</span>
+              <h3>3D Modeling &amp; Animation</h3>
+            </div>
+            <div class="tools-grid">
+              
+              <div class="tool-item" data-tool="maya">
+                <div class="tool-icon maya-icon">
+                  <span class="app-letter">M</span>
+                  <span class="app-name">MAYA</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">Autodesk Maya</strong>
+                  <span class="tool-role">Character Rigging, IK/FK, Animation Loops</span>
+                  <div class="meter-bar"><span style="width: 95%;"></span></div>
+                </div>
+              </div>
+
+              <div class="tool-item" data-tool="blender">
+                <div class="tool-icon blender-icon">
+                  <span class="app-symbol">🔶</span>
+                  <span class="app-name">BLENDER</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">Blender 3D</strong>
+                  <span class="tool-role">Low-Poly Modeling, Geometry Nodes, Cycles</span>
+                  <div class="meter-bar"><span style="width: 90%;"></span></div>
+                </div>
+              </div>
+
+              <div class="tool-item" data-tool="substance">
+                <div class="tool-icon substance-icon">
+                  <span class="app-letter">Pt</span>
+                  <span class="app-name">PAINTER</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">Substance 3D Painter</strong>
+                  <span class="tool-role">PBR Hand-Painted Texturing &amp; Baking</span>
+                  <div class="meter-bar"><span style="width: 88%;"></span></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: 2D & Post-Production -->
+          <div class="skill-category-card">
+            <div class="card-header-label">
+              <span class="badge-num">02</span>
+              <h3>Visual Design &amp; Motion</h3>
+            </div>
+            <div class="tools-grid">
+
+              <div class="tool-item" data-tool="ae">
+                <div class="tool-icon ae-icon">
+                  <span class="app-letter">Ae</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">After Effects</strong>
+                  <span class="tool-role">Compositing, VFX, Motion Storytelling</span>
+                  <div class="meter-bar"><span style="width: 92%;"></span></div>
+                </div>
+              </div>
+
+              <div class="tool-item" data-tool="premiere">
+                <div class="tool-icon pr-icon">
+                  <span class="app-letter">Pr</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">Premiere Pro</strong>
+                  <span class="tool-role">Video Editing, Timing &amp; Sound Sync</span>
+                  <div class="meter-bar"><span style="width: 85%;"></span></div>
+                </div>
+              </div>
+
+              <div class="tool-item" data-tool="photoshop">
+                <div class="tool-icon ps-icon">
+                  <span class="app-letter">Ps</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">Photoshop</strong>
+                  <span class="tool-role">Matte Painting, Texture Mapping, Cleanups</span>
+                  <div class="meter-bar"><span style="width: 94%;"></span></div>
+                </div>
+              </div>
+
+              <div class="tool-item" data-tool="illustrator">
+                <div class="tool-icon ai-icon">
+                  <span class="app-letter">Ai</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">Illustrator</strong>
+                  <span class="tool-role">Vector Art, Typography, Iconography</span>
+                  <div class="meter-bar"><span style="width: 86%;"></span></div>
+                </div>
+              </div>
+
+              <div class="tool-item" data-tool="procreate">
+                <div class="tool-icon procreate-icon">
+                  <span class="app-letter">✏️</span>
+                  <span class="app-name">PROCREATE</span>
+                </div>
+                <div class="tool-info">
+                  <strong class="tool-title">Procreate</strong>
+                  <span class="tool-role">Character Sketches, 2D Storyboarding</span>
+                  <div class="meter-bar"><span style="width: 96%;"></span></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS: TORN PAPER DOSSIERS ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-stamp-wrapper">
+          <div class="vintage-stamp">
+            <span class="stamp-cat">SELECTED WORKS</span>
+            <span class="stamp-num">SEC.04</span>
+            <h2 class="stamp-heading">Featured Projects &amp; Visual Archives</h2>
+          </div>
+        </div>
+
+        <!-- Filter Tags -->
+        <div class="project-filter-bar">
+          <span class="filter-label">Filter Archive:</span>
+          <button class="filter-btn active" data-filter="all">All Works</button>
+          <button class="filter-btn" data-filter="animation">3D Animation &amp; Rigging</button>
+          <button class="filter-btn" data-filter="character">Character Modeling</button>
+          <button class="filter-btn" data-filter="environment">Stylized Environments</button>
+          <button class="filter-btn" data-filter="storyboard">Storyboards &amp; 2D</button>
+        </div>
+
+        <!-- PROJECT 1: YASHA & YUNA (HERO PROJECT FROM USER REFERENCE) -->
+        <article class="project-dossier-card torn-paper-card" data-category="animation character storyboard">
+          <div class="torn-paper-edge-top"></div>
+          
+          <div class="dossier-inner">
+            <!-- Project Header Meta Strip (Exact match to reference Image 3) -->
+            <div class="dossier-meta-grid">
+              <div class="meta-cell">
+                <span class="meta-label">Project \</span>
+                <h3 class="meta-value-title">Yasha &amp; Yuna</h3>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Year \</span>
+                <span class="meta-value">2026</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Role \</span>
+                <span class="meta-value role-tags">Lead Animator, Character Modeler, Rigging Artist</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Software \</span>
+                <span class="meta-value">Autodesk Maya, Substance Painter, After Effects, Procreate</span>
+              </div>
+            </div>
+
+            <!-- Project Narrative Description -->
+            <div class="dossier-narrative">
+              <p>
+                Working alongside my amazing 4-member team at <strong>KAVA Studio</strong>, <em>Yasha &amp; Yuna</em> was our 
+                final year capstone project celebrating the warm nostalgia of 2010s childhoods and traditional games like 
+                <em>batu seremban</em>.
+              </p>
+              <p>
+                To reflect true authentic cultural diversity, we paired <strong>Yasha (Indian)</strong> and <strong>Yuna (Malay)</strong> 
+                as competitive best friends navigating their vibrant school days together. As the <strong>lead animator, rigging artist, and 3D character modeler</strong>, 
+                I utilized Autodesk Maya, Substance Painter, After Effects, and Procreate to bring their world, comedic facial expressions, and dynamic story to life.
+              </p>
+            </div>
+
+            <!-- Project Visual Showcase (Storyboard & Reel Preview) -->
+            <div class="dossier-showcase">
+              <div class="showcase-header">
+                <span class="showcase-tag">STORYBOARD SEQUENCING &amp; PRODUCTION FRAMES</span>
+                <button class="interactive-zoom-btn" data-target="modal-yuna">🔍 Click to Expand Storyboard &amp; Details</button>
+              </div>
+
+              <div class="storyboard-preview-frame">
+                <img src="assets/img/project-yuna.jpg" alt="Yasha & Yuna Storyboard Sheet" class="storyboard-sheet-img">
+                <div class="storyboard-magnifier-hint">
+                  <span>✨ 48 Hand-drawn panels • Beat timing • Animatic layout</span>
+                </div>
+              </div>
+
+              <!-- Project Highlights & Breakdown Pills -->
+              <div class="project-tags-cloud">
+                <span class="p-pill">Full Body IK/FK Rig</span>
+                <span class="p-pill">Facial Blendshapes (32 Expressions)</span>
+                <span class="p-pill">Stylized PBR Texturing</span>
+                <span class="p-pill">Cloth &amp; Hair Dynamics</span>
+                <span class="p-pill">Finalist: Digital Animation Capstone '26</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="torn-paper-edge-bottom"></div>
+        </article>
+
+        <!-- PROJECT 2: LUMINA GROVE (STYLIZED 3D ENVIRONMENT) -->
+        <article class="project-dossier-card torn-paper-card" data-category="environment">
+          <div class="torn-paper-edge-top"></div>
+          
+          <div class="dossier-inner">
+            <div class="dossier-meta-grid">
+              <div class="meta-cell">
+                <span class="meta-label">Project \</span>
+                <h3 class="meta-value-title">Lumina Grove (Cozy Diorama)</h3>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Year \</span>
+                <span class="meta-value">2025</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Role \</span>
+                <span class="meta-value role-tags">Environment Artist, Lighting &amp; Shader Development</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Software \</span>
+                <span class="meta-value">Blender 3D, Substance Painter, Photoshop</span>
+              </div>
+            </div>
+
+            <div class="dossier-narrative">
+              <p>
+                A peaceful Ghibli-inspired 3D diorama exploring atmospheric lighting, hand-painted stylized greenery, 
+                and miniature architecture. Designed to evoke feelings of calm and wonder, featuring procedural moss shaders, 
+                volumetric god rays, and custom stylized water ripples.
+              </p>
+            </div>
+
+            <!-- Visual Diorama Simulation Grid -->
+            <div class="diorama-visual-strip">
+              <div class="diorama-preview-card">
+                <div class="diorama-art diorama-1">
+                  <div class="art-overlay-badge">FINAL RENDER</div>
+                  <div class="mockup-scene-glow">🌿</div>
+                  <p class="scene-caption">Golden Hour Sunlight &amp; Stylized Foliage</p>
+                </div>
+              </div>
+              <div class="diorama-preview-card">
+                <div class="diorama-art diorama-2">
+                  <div class="art-overlay-badge">CLAY / WIREFRAME</div>
+                  <div class="mockup-scene-glow">📐</div>
+                  <p class="scene-caption">Optimized Topology • 18k Polygons</p>
+                </div>
+              </div>
+              <div class="diorama-preview-card">
+                <div class="diorama-art diorama-3">
+                  <div class="art-overlay-badge">LIGHTING PASS</div>
+                  <div class="mockup-scene-glow">💡</div>
+                  <p class="scene-caption">Warm Rim Lights &amp; Fog Volumes</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tags-cloud">
+              <span class="p-pill">Procedural Shaders</span>
+              <span class="p-pill">Stylized Hand-Painted PBR</span>
+              <span class="p-pill">Volumetric Cycles Lighting</span>
+              <span class="p-pill">Modular Asset Kit</span>
+            </div>
+          </div>
+
+          <div class="torn-paper-edge-bottom"></div>
+        </article>
+
+        <!-- PROJECT 3: CYBER-KITSUNE (MECH & ORGANIC RIG) -->
+        <article class="project-dossier-card torn-paper-card" data-category="animation character">
+          <div class="torn-paper-edge-top"></div>
+          
+          <div class="dossier-inner">
+            <div class="dossier-meta-grid">
+              <div class="meta-cell">
+                <span class="meta-label">Project \</span>
+                <h3 class="meta-value-title">Cyber-Kitsune: Dual-Form Rig</h3>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Year \</span>
+                <span class="meta-value">2025</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Role \</span>
+                <span class="meta-value role-tags">Lead Technical Rigger &amp; Modeler</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Software \</span>
+                <span class="meta-value">Autodesk Maya, Python Scripting, ZBrush</span>
+              </div>
+            </div>
+
+            <div class="dossier-narrative">
+              <p>
+                A complex hybrid character rig engineered for both bipedal humanoid stances and quadruped fox sprints. 
+                Equipped with seamless IK/FK switching, stretchy spine splines, 9 articulated tail joints with secondary dynamics, 
+                and automated mechanical piston constraints.
+              </p>
+            </div>
+
+            <!-- Rig Blueprint & Controller Spec -->
+            <div class="rig-spec-box">
+              <div class="spec-col">
+                <strong class="spec-title">⚙️ Rig Mechanics</strong>
+                <ul>
+                  <li>Seamless IK/FK Matching on Arms &amp; Quadruped Legs</li>
+                  <li>Ribbon Spine with Volume Preservation (Squash &amp; Stretch)</li>
+                  <li>Custom Python Tool for 1-Click Pose Mirroring</li>
+                </ul>
+              </div>
+              <div class="spec-col">
+                <strong class="spec-title">🦊 Character Features</strong>
+                <ul>
+                  <li>9 Independent Tails with Overlapping Action Controls</li>
+                  <li>Retractable Mech Claws &amp; Energy Emission Panels</li>
+                  <li>Modular Game-Ready Skeleton (Unreal Engine 5 Compatible)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tags-cloud">
+              <span class="p-pill">Maya Python API</span>
+              <span class="p-pill">Quadruped &amp; Bipedal IK/FK</span>
+              <span class="p-pill">Squash &amp; Stretch Math</span>
+              <span class="p-pill">UE5 Retarget Ready</span>
+            </div>
+          </div>
+
+          <div class="torn-paper-edge-bottom"></div>
+        </article>
+
+        <!-- PROJECT 4: ECHOES OF RAIN (VISUAL DEVELOPMENT & STORYBOARDS) -->
+        <article class="project-dossier-card torn-paper-card" data-category="storyboard">
+          <div class="torn-paper-edge-top"></div>
+          
+          <div class="dossier-inner">
+            <div class="dossier-meta-grid">
+              <div class="meta-cell">
+                <span class="meta-label">Project \</span>
+                <h3 class="meta-value-title">Echoes of Rain (Short Film Storyboard)</h3>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Year \</span>
+                <span class="meta-value">2024</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Role \</span>
+                <span class="meta-value role-tags">Storyboard Artist &amp; Color Script Lead</span>
+              </div>
+              <div class="meta-cell">
+                <span class="meta-label">Software \</span>
+                <span class="meta-value">Procreate, Photoshop, Premiere Pro</span>
+              </div>
+            </div>
+
+            <div class="dossier-narrative">
+              <p>
+                An emotional 64-board animatic following an elderly tea shop owner in torrential monsoon rain. 
+                Emphasized dynamic camera framing, cinematic depth-of-field transitions, and pacing designed to stir empathy 
+                without a single spoken word of dialogue.
+              </p>
+            </div>
+
+            <div class="storyboard-strip-demo">
+              <div class="strip-frame">
+                <span class="frame-num">PANEL #12</span>
+                <div class="frame-sketch">🌧️ Wide Shot • Alley in Torrential Rain</div>
+                <span class="frame-notes">Camera cranes down slow</span>
+              </div>
+              <div class="strip-frame">
+                <span class="frame-num">PANEL #13</span>
+                <div class="frame-sketch">🏮 Close-up • Steam rising from clay teapot</div>
+                <span class="frame-notes">Focus pulls to doorway</span>
+              </div>
+              <div class="strip-frame">
+                <span class="frame-num">PANEL #14</span>
+                <div class="frame-sketch">🐱 Two-Shot • Stray kitten shelters under awning</div>
+                <span class="frame-notes">Warm yellow lantern casts rim light</span>
+              </div>
+              <div class="strip-frame">
+                <span class="frame-num">PANEL #15</span>
+                <div class="frame-sketch">🍵 Match Cut • Wooden tray offered forward</div>
+                <span class="frame-notes">Beat timing: 2.4 seconds pause</span>
+              </div>
+            </div>
+
+            <div class="project-tags-cloud">
+              <span class="p-pill">Cinematic Continuity</span>
+              <span class="p-pill">Color Scripting</span>
+              <span class="p-pill">Emotional Pacing</span>
+              <span class="p-pill">Animatic Timing</span>
+            </div>
+          </div>
+
+          <div class="torn-paper-edge-bottom"></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== GUESTBOOK / INTERACTIVE DESK POST-IT ==================== -->
+    <section class="section desk-notes-section">
+      <div class="container">
+        
+        <div class="interactive-desk-station">
+          <div class="station-header">
+            <span class="station-icon">📝</span>
+            <h3 class="station-title">Leave a Note on Aanchal's Desk</h3>
+            <p class="station-sub">Stick your thoughts, a friendly greeting, or project inquiry below!</p>
+          </div>
+
+          <div class="desk-interactive-board">
+            
+            <!-- Sticky Note Input Form -->
+            <div class="sticky-form-note tape-top-center">
+              <div class="sticky-pin"></div>
+              <form id="deskNoteForm" class="desk-form">
+                <label for="visitorName" class="form-label">Your Name / Handle:</label>
+                <input type="text" id="visitorName" class="form-input" placeholder="e.g. Fellow Artist / Studio Recruiter" required>
+
+                <label for="visitorMsg" class="form-label">Your Message:</label>
+                <textarea id="visitorMsg" class="form-textarea" placeholder="Say hello or share feedback on my work..." rows="3" required></textarea>
+
+                <div class="form-actions">
+                  <button type="submit" class="stick-btn">
+                    <span>📌 Stick on Desk</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Notes Wall / Corkboard -->
+            <div class="corkboard-wall" id="corkboardWall">
+              <!-- Default notes from visitors -->
+              <div class="cork-note yellow-note">
+                <div class="pin-dot red-pin"></div>
+                <p class="note-author">@kava_studios</p>
+                <p class="note-body">"Loved working on Yasha &amp; Yuna with you! The rigs held up so smoothly! 🌟"</p>
+                <span class="note-time">Yesterday</span>
+              </div>
+
+              <div class="cork-note blue-note">
+                <div class="pin-dot blue-pin"></div>
+                <p class="note-author">@maya_mentor</p>
+                <p class="note-body">"Incredible topology work on the face blendshapes. Keep inspiring!"</p>
+                <span class="note-time">2 days ago</span>
+              </div>
+
+              <div class="cork-note pink-note">
+                <div class="pin-dot yellow-pin"></div>
+                <p class="note-author">@art_director</p>
+                <p class="note-body">"The retro workstation UI idea is pure gold. Love this portfolio vibe! ✨"</p>
+                <span class="note-time">3 days ago</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="desk-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="dymo-embossed-tape">
+          <span class="dymo-text">AANCHAL • 3D ARTIST &amp; DESIGNER</span>
+        </div>
+        <p class="footer-note">Handcrafted with retro passion, tactile textures &amp; modern web craft.</p>
+      </div>
+
+      <div class="footer-center">
+        <a href="#hero" class="back-to-top-btn" title="Back to Top">
+          <span>▲ BACK TO DESK</span>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright-text">© 2026 Aanchal. All rights reserved.</p>
+        <p class="credits-text">Inspired by tactile aesthetics &amp; creative storytelling.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL: FULL RESOLUTION STORYBOARD VIEWER ==================== -->
+  <div id="projectModal" class="custom-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-paper-dossier">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-tag">ARCHIVE DOSSIER: YASHA &amp; YUNA</span>
+            <h3 class="modal-heading">Complete 48-Panel Storyboard &amp; Capstone Reel</h3>
+          </div>
+          <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-image-container">
+            <img src="assets/img/project-yuna.jpg" alt="High Resolution Storyboard Sheet" class="modal-highres-img">
+          </div>
+          <div class="modal-details-grid">
+            <div class="detail-box">
+              <h4>🎬 Film Synopsis</h4>
+              <p>
+                Set in a 2010s Malaysian classroom, Yuna and Yasha turn a friendly recess game of <em>batu seremban</em> 
+                into an epic, cinematic anime-style rivalry filled with slow-motion tosses, comedic expressions, and 
+                touching moments of camaraderie.
+              </p>
+            </div>
+            <div class="detail-box">
+              <h4>🛠️ Technical Execution</h4>
+              <p>
+                Modeled in Autodesk Maya with clean edge loops for facial deformation. Texturing accomplished in Substance 3D Painter 
+                using stylized hand-painted maps. Final composition rendered in Arnold and composited in After Effects.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="modal-secondary-btn" id="modalCloseFooterBtn">Close Dossier</button>
+          <a href="mailto:aanchalgrng@gmail.com?subject=Inquiry%20Regarding%20Yasha%20and%20Yuna" class="modal-primary-btn">Contact Aanchal About This Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
