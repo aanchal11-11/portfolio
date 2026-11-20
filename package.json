@@ -1,0 +1,21 @@
+{
+  "name": "aanchal-portfolio",
+  "version": "1.0.0",
+  "description": "Tactile retro 3D workstation & creative scrapbook portfolio for Aanchal",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 8080 .",
+    "dev": "npx live-server --port=8080",
+    "serve": "npx serve -l 8080 ."
+  },
+  "keywords": [
+    "portfolio",
+    "3d-artist",
+    "creative-designer",
+    "animator",
+    "retro-ui",
+    "tactile-design"
+  ],
+  "author": "Aanchal Gurung <aanchalgrng@gmail.com>",
+  "license": "MIT"
+}

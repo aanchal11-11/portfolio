@@ -57,6 +57,7 @@ potf/
 ├── index.html            # Semantic HTML5 with accessible structure & SVGs
 ├── style.css             # Custom CSS: variables, 3D transforms, torn paper deckle edges
 ├── script.js             # Web Audio synthesizer, CRT terminal logic, modal & filters
+├── package.json          # NPM configuration & scripts (npm start, npm run dev)
 ├── start-local.bat       # 1-click Windows local server launcher
 ├── push-to-github.bat    # Git push helper script
 ├── .gitignore            # Git exclusions
@@ -73,24 +74,44 @@ potf/
 
 ## 🚀 Running Locally
 
-No npm, Node.js, or complex build steps required. It runs natively on any modern web browser!
+You can run the portfolio locally using **NPM (Node.js)**, the **1-click Windows launcher**, or **Python**.
 
-### Quick Windows Launcher
-Double-click **`start-local.bat`** in the root directory. It will start a local server and automatically open the portfolio in your default browser at:
-```
-http://localhost:8080
-```
+### Option 1: Using Node.js & NPM (Recommended)
+You can launch the local server using `npm` or `npx`:
 
-### Or using Python in terminal
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/aanchal11-11/portfolio.git
 cd portfolio
 
-# Start Python server
+# 2. Start the local server with NPM
+npm start
+```
+
+Or run development mode with live-reloading:
+```bash
+npm run dev
+```
+
+You can also run directly with `npx` without installing anything globally:
+```bash
+npx serve -l 8080 .
+```
+Then open **`http://localhost:8080`** in your browser.
+
+---
+
+### Option 2: 1-Click Windows Launcher
+Double-click **`start-local.bat`** in the project folder. It starts the local server and automatically pops open the portfolio in your browser at `http://localhost:8080`.
+
+---
+
+### Option 3: Using Python
+```bash
+# Start Python HTTP server
 python -m http.server 8080
 ```
-Then visit `http://localhost:8080` in your browser.
+Then visit **`http://localhost:8080`** in your browser.
 
 ---
 
